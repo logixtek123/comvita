@@ -7,6 +7,8 @@ import Banner from '../components/banner'
 import Layout from '../components/layout'
 import ArticlePreview from '../components/article-preview'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import BannerIntroducing from '../components/banner-introducing'
+
 
 class RootIndex extends React.Component {
   render() {
@@ -17,27 +19,7 @@ class RootIndex extends React.Component {
         <div style={{ background: '#fef9f0' }}>
           {banners.map(({ node }, index) => {
             if (node.order === 1) {
-              return (
-                <div style={{ padding: (30, 70) }} key={index}>
-                  <span style={{ textTransform: 'uppercase', fontSize: 40, fontWeight: 600 }}>{node.title}</span>
-                  <div className="row">
-                    <div className="col-md-4">
-                      <div className="">
-                        <p style={{ fontSize: 22, color: '#c59e57', fontWeight: 600, margin: (10, 0) }}
-                          dangerouslySetInnerHTML={{
-                            __html: node.body.childMarkdownRemark.html,
-                          }}
-                        />
-                        <button style={{ background: '#c59e57', color: '#fff', border: (2, 'solid', '#c59e57') }} className="btn">Shop Manuka</button>
-                      </div>
-                    </div>
-                    <div className="col-md-8">
-                      <img src={node.backgroundImage.fluid.src} alt="Logo" style={{ width: 836, height: 382 }} />
-                    </div>
-                  </div>
-                </div>
-              )
-
+              return <BannerIntroducing data={node} key={index} />
             }
             return (
               <Banner data={node} key={index} />

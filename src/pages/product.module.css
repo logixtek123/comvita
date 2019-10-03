@@ -1,14 +1,52 @@
+@media (min-width: 768px) {
+  .hero {
+    display: flex;
+    background-size: cover;
+    width: 100%;
+    padding-top: 10% !important;
+    padding-bottom: 10% !important;
+    background: url('https://www.comvita.co.nz/_assets/product_images/UK/banners/02849%20UK_Web_Header_1440x398_02_honey.jpg');
+    font-size: 2em;
+    overflow: hidden;
+  }
+}
+
 .hero {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 61.8vh;
-  max-height: 400px;
+  background-size: cover;
+  width: 100%;
+  padding-top: 15%;
+  padding-bottom: 15%;
   background: url('https://www.comvita.co.nz/_assets/product_images/UK/banners/02849%20UK_Web_Header_1440x398_02_honey.jpg');
   font-size: 2em;
   overflow: hidden;
 }
 
+
+@media (min-width: 768px) {
+  .bannerPadding {
+    padding: 3rem !important;
+  }
+
+}
+
+.bannerPadding {
+  padding: 1rem !important;
+}
+
+@media (min-width: 768px) {
+  .textSlogan {
+    color: white;
+    text-shadow: 2px 2px 12px #382f2d;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    display: inline-block;
+    font-size: 60px !important;
+    text-transform: capitalize;
+  }
+}
 
 .textSlogan {
   color: white;
@@ -18,6 +56,6 @@
   margin-bottom: 0;
   margin-top: 0;
   display: inline-block;
-  font-size: 60px;
+  font-size: 35px;
   text-transform: capitalize;
 }

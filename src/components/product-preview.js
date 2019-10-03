@@ -7,7 +7,8 @@ import styles from './product-preview.module.css'
 
 let singleProductClass = [
     `${styles.singleProduct}`,
-    'col-md-3'
+    'col-md-3',
+    'text-center'
 ]
 singleProductClass = singleProductClass.join(' ')
 
@@ -24,7 +25,7 @@ export default ({ product }) => (
         <h3 className={styles.previewTitle} style={{ textAlign: 'center' }}>
             {product.title}
         </h3>
-        <img src={product.image.fluid.src} style={{ width: 310, height: 310 }} />
+        <img src={product.image.fluid.src} className="mx-auto" style={{ width: 310, height: 310 }} />
         <div>
             {(() => {
                 if (product.oldPrice === product.newPrice) {
