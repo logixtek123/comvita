@@ -5,12 +5,12 @@ import styles from './banner-introducing.module.css'
 
 export default ({ data }) => (
   <div className={styles.bannerPadding}>
-    <div className="text-center">
-      <span className={styles.titleBanner}>{data.title}</span>
+    <div className={styles.titleBanner}>
+      <span>{data.title}</span>
     </div>
     <div className="row">
       <div className="col-md-4">
-        <div className="text-center">
+        <div className={styles.titleBanner}>
           <p style={{ fontSize: 22, color: '#c59e57', fontWeight: 600, margin: (10, 0)}}
             dangerouslySetInnerHTML={{
               __html: data.body.childMarkdownRemark.html,

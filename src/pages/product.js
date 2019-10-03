@@ -16,7 +16,7 @@ class ProductIndex extends React.Component {
               Gourmet Honey
             </span>
           </div>
-          <div className="wrapper">
+          <div className="wrapper text-center">
             <h2 className="section-headline">GOURMET HONEY</h2>
             <div className="row">
               {products.map(({ node }, index) => {

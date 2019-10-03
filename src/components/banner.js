@@ -16,8 +16,8 @@ export default ({ data }) => (
     </div>
     <div className="col-md-8">
       <div className="p-3 bg-white">
-        <div className="text-center">
-          <span className={styles.titleBanner}>{data.title}</span>
+        <div className={styles.titleBanner}>
+          <span>{data.title}</span>
         </div>
         <p style={{ fontSize: 16 }}
           dangerouslySetInnerHTML={{
