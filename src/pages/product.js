@@ -4,6 +4,7 @@ import get from 'lodash/get'
 import styles from './product.module.css'
 import Layout from "../components/layout"
 import ProductPreview from '../components/product-preview'
+// import BackgroundHoneyImage from './../assets/background_honey.jpeg'
 
 class ProductIndex extends React.Component {
   render() {
@@ -50,7 +51,7 @@ export const pageQuery = graphql`
           oldPrice
           type
           image {
-            fluid(maxWidth: 350, maxHeight: 350, resizingBehavior: SCALE) {
+            fluid(resizingBehavior: SCALE) {
             ...GatsbyContentfulFluid_tracedSVG
             }
           }

@@ -11,7 +11,7 @@ export default ({ data }) => (
     <div className="row">
       <div className="col-md-4">
         <div className={styles.titleBanner}>
-          <p style={{ fontSize: 22, color: '#c59e57', fontWeight: 600, margin: (10, 0)}}
+          <div style={{ fontSize: 22, color: '#c59e57', fontWeight: 600, margin: (10, 0)}}
             dangerouslySetInnerHTML={{
               __html: data.body.childMarkdownRemark.html,
             }}

@@ -19,7 +19,7 @@ export default ({ data }) => (
         <div className={styles.titleBanner}>
           <span>{data.title}</span>
         </div>
-        <p style={{ fontSize: 16 }}
+        <div style={{ fontSize: 16 }}
           dangerouslySetInnerHTML={{
             __html: data.body.childMarkdownRemark.html,
           }}
